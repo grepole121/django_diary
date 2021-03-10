@@ -1,9 +1,11 @@
-{% extends "diary/base.html" %} {% block content %} {% for entry in entries %}
+{% extends "diary/base.html" %} {% block content %}
+
+ {% for entry in entries %}
 <article class="media content-section">
   <div class="media-body">
     <div class="article-metadata">
       <small class="text-muted"
-        >{{ entry.date_posted|date:"d/m/Y - G:i:s" }}</small
+        >{{ entry.date_posted|date:"d/m/Y - H:i:s" }}</small
       >
     </div>
     <p class="article-content">{{ entry.content }}</p>
