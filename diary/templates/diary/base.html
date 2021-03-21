@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <script src="{% static 'lib/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/shortcuts/infinite.min.js' %}"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -20,7 +23,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'blog/main.css' %}"
+      href="{% static 'diary/main.css' %}"
     />
 
     {% if title %}
@@ -95,5 +98,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>

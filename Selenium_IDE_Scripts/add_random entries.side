@@ -1,0 +1,68 @@
+{
+  "id": "85359c79-2a3f-4da5-9e7d-b05aed7eb1d3",
+  "version": "2.0",
+  "name": "add entries",
+  "url": "http://127.0.0.1:8000/new",
+  "tests": [{
+    "id": "628bc342-955d-44d2-b06a-5688fab8fda7",
+    "name": "add",
+    "commands": [{
+      "id": "607ff23d-8f0d-420f-8665-86c19aa2198f",
+      "comment": "",
+      "command": "times",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcaa4c07-ec3c-467e-a53f-36f0c2ec8586",
+      "comment": "",
+      "command": "open",
+      "target": "/new",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cbfc101-62a3-4098-8ecd-e5e85b71957d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1315x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "237178a2-04fe-4af1-a540-c9fb055d2ba5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById(\"id_content\").innerText = Math.floor(Math.random() * 1000)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa7c2847-89c5-4283-b76f-eb49319fc7de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "908e581e-3b4a-48e2-8f32-f0c9ded96671",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e72c59e5-7807-439b-9a68-aed5857f017d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["628bc342-955d-44d2-b06a-5688fab8fda7"]
+  }],
+  "urls": ["http://127.0.0.1:8000/", "http://127.0.0.1:8000/new"],
+  "plugins": []
+}
